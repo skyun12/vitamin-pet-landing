@@ -7,17 +7,34 @@ export default function About() {
       <Head>
         <title>브랜드 소개 | Health & Pet USA</title>
       </Head>
-      <main className="p-10 font-sans bg-gray-50 text-gray-800">
-        <h1 className="text-3xl font-bold text-blue-900 mb-4">브랜드 소개</h1>
-        <p className="text-lg leading-7">
-          Health & Pet USA는 미국산 건강기능식품과 반려동물 영양제를 전문으로 소개하는 브랜드입니다.
+      <main style={{
+        fontFamily: 'Arial, sans-serif',
+        backgroundColor: '#f9f9f9',
+        padding: '60px 20px',
+        color: '#1a2b4c'
+      }}>
+        <h1 style={{ fontSize: '2.5rem', fontWeight: 'bold' }}>브랜드 소개</h1>
+        <p style={{ fontSize: '1.1rem', lineHeight: '1.6', marginTop: '24px' }}>
+          Health & Pet USA는 미국산 건강기능식품과 반려동물 영양제를 전문적으로 제공합니다.
           <br /><br />
-          ✔ 미국 FDA 등록 제조사의 정식 제품만을 취급합니다. <br />
-          ✔ 성인용, 키즈용, 반려동물용 제품을 분류하여 제공합니다. <br />
-          ✔ 믿을 수 있는 원료, 정직한 가격으로 고객에게 다가갑니다.
+          ✔ 미국 FDA 등록 제조사의 정식 제품만을 선별합니다.<br />
+          ✔ 성인 비타민, 키즈 비타민, 반려견 비타민으로 구성하여 맞춤형 건강을 제안합니다.<br />
+          ✔ 정직한 성분, 합리적인 가격, 그리고 신뢰감을 드리는 브랜드를 추구합니다.
         </p>
-        <div className="mt-8">
-          <Link href="/" className="text-blue-700 hover:underline">← 메인 페이지로 돌아가기</Link>
+        <img
+          src="/images/about-banner.jpg"
+          alt="브랜드 배너"
+          style={{
+            maxWidth: '100%',
+            borderRadius: '12px',
+            marginTop: '40px',
+            boxShadow: '0 4px 16px rgba(0,0,0,0.1)'
+          }}
+        />
+        <div style={{ marginTop: '30px' }}>
+          <Link href="/" style={{ color: '#003366', textDecoration: 'underline' }}>
+            ← 메인 페이지로 돌아가기
+          </Link>
         </div>
       </main>
     </>
